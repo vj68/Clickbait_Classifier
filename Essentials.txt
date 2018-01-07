@@ -1,0 +1,28 @@
+1)
+- To make a virtual environment - virtualenv clickbait-env
+- To activate virtual environment - clickbait\Scripts\activate
+
+2) To install dependencies -  
+	pip install jupyter numpy scipy scikit-learn
+	(jupyter is optional)
+3) Save the clickbait.txt file in project directory.
+
+4) Clickbait headlines - 1
+   Normal headlines	   - 0
+
+5) Vectorizer - transforms text to numerical format
+	* TfidfVectorizer is used here
+	* TF-IDF = Term frequency - Inverse Document Frequency
+	* Each piece of text is converted to large sparse array(most elements are 0)
+	Each element in the array represents how often a specific word occurs in the headline.
+
+	* Assumption - All the words in the dataset make up the Universal set.
+
+	* Words occuring very often(and,the,is) - are given low weights
+	* Words occuring less frequently - higher weight and considered important.
+
+6) strip() - removes whitespace characters from start and end of the string
+
+7) Converting text to vectors - 
+	* "fit" the vectorizer - look at all unique words and decide the number of features(=no. of unique words)
+	*  "transform" - converts into matrix of vectors
