@@ -17,7 +17,7 @@
 * Create a virtual environment :<br> 
 **virtualenv <YOUR_VIRTUALENV_NAME>**
 * Activate virtual environment :<br>
-**source <YOUR_VIRTUALENV_NAME>/bin/activate** - Linux
+**source <YOUR_VIRTUALENV_NAME>/bin/activate** - Linux<br>
 **<YOUR_VIRTUALENV_NAME>\Scripts\activate** - Windows
 * Install dependencies<br>
 __pip install jupyter numpy scipy sklearn__<br>
